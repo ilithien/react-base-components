@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Button component matches snapshot 1`] = `
+<button
+  className="react-base__button"
+  onClick={undefined}
+/>
+`;
