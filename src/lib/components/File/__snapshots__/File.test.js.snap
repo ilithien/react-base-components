@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing File input component matches snapshot 1`] = `
+<div
+  className="react-base__file"
+>
+  <img
+    src=""
+  />
+  <label
+    className="file-label"
+    htmlFor="react-file-input"
+  >
+    Choose a file...
+  </label>
+  <input
+    hidden={true}
+    id="react-file-input"
+    onChange={[Function]}
+    type="file"
+  />
+</div>
+`;
