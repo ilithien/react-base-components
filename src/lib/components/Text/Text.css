@@ -1,0 +1,21 @@
+.react-base__text {
+  padding: 10px 5px 10px 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.react-base__text:focus {
+  border: 1px solid #ddd;
+}
+
+.react-base__text-group {
+  font-family: "Helvetica";
+}
+
+.react-base__text-group > label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #bbb;
+}

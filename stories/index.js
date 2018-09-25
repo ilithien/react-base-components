@@ -1,8 +1,9 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
-import Button from "../src/lib/components/button";
-import Text from "../src/lib/components/text";
+import Button from "../src/lib/components/Button";
+import Text from "../src/lib/components/Text";
+import File from '../src/lib/components/File';
 
 storiesOf("Button", module).add("with text", () => (
   <Button onClick={action("clicked")}>Hello Button</Button>
@@ -20,3 +21,6 @@ storiesOf("Text", module)
       onChange={action(`I'm changing`)}
     />
   ));
+
+  storiesOf("File Input", module)
+    .add("basic file input", () => <File onLoadFile={action('Something loaded')} />)

@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Text component matches snapshot 1`] = `
+<div
+  className="react-base__text-group"
+>
+  <label
+    htmlFor={undefined}
+  />
+  <input
+    className="react-base__text"
+    id={undefined}
+    name={undefined}
+    onChange={undefined}
+    placeholder={undefined}
+    type="text"
+  />
+</div>
+`;
