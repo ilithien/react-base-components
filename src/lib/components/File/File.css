@@ -1,14 +1,14 @@
 .react-base__file {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .react-base__file > .file-label {
     background-color: #e74c3c;
     color: #eee;
     padding: 8px 15px 8px 15px;
-    border-radius: 5px;    
+    border-radius: 5px;        
 }
 
 .react-base__file > img {

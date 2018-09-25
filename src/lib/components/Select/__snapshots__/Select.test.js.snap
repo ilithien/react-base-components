@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Select input component matches snapshot 1`] = `
+<div
+  className="react-base__select"
+>
+  <div
+    className="react-base__select-selector"
+    onClick={[Function]}
+  >
+    Hey
+  </div>
+</div>
+`;
