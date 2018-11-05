@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Card component matches snapshot 1`] = `
+<div
+  className="react-base__card"
+>
+  <img
+    alt={undefined}
+    src={undefined}
+    title={undefined}
+  />
+  <div
+    className="react-base__card-content"
+  >
+    <h1 />
+    <p />
+  </div>
+</div>
+`;

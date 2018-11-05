@@ -1,0 +1,15 @@
+.react-base__card {
+  -webkit-box-shadow: 5px 5px 10px -5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 5px 5px 10px -5px rgba(0,0,0,0.75);
+  box-shadow: 5px 5px 10px -5px rgba(0,0,0,0.75);    
+  margin: 10px;
+  border: 1px solid #ccc;  
+}
+
+.react-base__card > img {
+  width: 100%;
+}
+
+.react-base__card-content {
+  padding: 5px 5px 10px 20px;
+}
