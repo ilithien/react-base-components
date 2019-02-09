@@ -20,13 +20,35 @@ var Select = function (_Component) {
 
     var _this = _possibleConstructorReturn(this, (Select.__proto__ || Object.getPrototypeOf(Select)).call(this, props));
 
-    _initialiseProps.call(_this);
+    _this.selectDefaultValue = function () {
+      var _this$props = _this.props,
+          placeholder = _this$props.placeholder,
+          _this$props$options = _toArray(_this$props.options),
+          first = _this$props$options[0],
+          rest = _this$props$options.slice(1),
+          defaultValue = _this$props.defaultValue;
 
-    var _this$props = _this.props,
-        _this$props$options = _toArray(_this$props.options),
-        first = _this$props$options[0],
-        rest = _this$props$options.slice(1),
-        defaultValue = _this$props.defaultValue;
+      if (defaultValue) {
+        return defaultValue;
+      } else if (placeholder) {
+        return { label: placeholder };
+      } else {
+        return first;
+      }
+    };
+
+    _this.selectOption = function (option) {
+      _this.setState({ value: option, isOpen: false });
+      _this.props.onValueChange(option.value);
+    };
+
+    _this.toggleOpen = function () {
+      _this.setState(function (prevState) {
+        return {
+          isOpen: !prevState.isOpen
+        };
+      });
+    };
 
     _this.state = {
       isOpen: false,
@@ -78,39 +100,6 @@ var Select = function (_Component) {
 
   return Select;
 }(Component);
-
-var _initialiseProps = function _initialiseProps() {
-  var _this3 = this;
-
-  this.selectDefaultValue = function () {
-    var _props = _this3.props,
-        placeholder = _props.placeholder,
-        _props$options = _toArray(_props.options),
-        first = _props$options[0],
-        rest = _props$options.slice(1),
-        defaultValue = _props.defaultValue;
-
-    if (defaultValue) {
-      return defaultValue;
-    } else if (placeholder) {
-      return { label: placeholder };
-    } else {
-      return first;
-    }
-  };
-
-  this.selectOption = function (option) {
-    _this3.setState({ value: option, isOpen: false });
-  };
-
-  this.toggleOpen = function () {
-    _this3.setState(function (prevState) {
-      return {
-        isOpen: !prevState.isOpen
-      };
-    });
-  };
-};
 
 export default Select;
 
