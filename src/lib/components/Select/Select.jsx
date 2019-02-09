@@ -5,11 +5,6 @@ import "./Select.css";
 export default class Select extends Component {
   constructor(props) {
     super(props);
-    const {
-      options: [first, ...rest],
-      defaultValue
-    } = this.props;
-
     this.state = {
       isOpen: false,
       value: this.selectDefaultValue()
@@ -33,6 +28,7 @@ export default class Select extends Component {
 
   selectOption = option => {
     this.setState({ value: option, isOpen: false });
+    this.props.onValueChange(option.value)
   };
 
   toggleOpen = () => {
